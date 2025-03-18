@@ -43,7 +43,8 @@ The neural network should be able to classify images of handwritten digits to th
 * Layer 0: Input Layer - 784 nodes, for each pixel.
 * Layer 1: Hidden Layer - 10 nodes, connected to (all?) nodes from Layer 0.
 * Layer 2: Output Layer - 10 nodes, each node corresponds to a whole number ∈ [0, 9]
-* Layer 0 --> Layer 1 --> Layer 2
+   ![image](https://github.com/user-attachments/assets/e624fc16-d1b6-407a-bbea-7813a30f4641)
+
 
 # Training/More Math?
 * There are 3 parts to training this model:
