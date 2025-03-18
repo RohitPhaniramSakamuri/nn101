@@ -30,7 +30,23 @@ Using PowerShell, follow these steps to set up and manage your virtual environme
    ```
 
 ## Procedure
-This project focuses on **Number Recognition** using the **MNIST dataset**, but without relying on PyTorch or any deep learning framework. Instead, it leverages **NumPy** and **Math** to build an intuitive understanding of image classification.
+This project focuses on **Number Recognition** using the **MNIST dataset**, but without relying on PyTorch or any deep learning framework. Instead, it leverages **NumPy** and **Math** to build an intuitive understanding of image classification. 
+
+The neural network should be able to classify images of handwritten digits to the actual number.
+
+# The Math
+* The images from the MNIST dataset are 28px x 28px = 784px, each pixel is a value ranging from 0-255 (grayscale: 0 is black, 255 is white).
+* Let there me "m" such training images. Then, there is an matrix 'X' of images, dimensions as m x 784 i.e, m rows and 784 columns, in each column would be a value of range [0, 255].
+* We transpose X (I don't know why yet, I intend to find out), such that there are now 784 rows and m columns.
+
+# The Model Architecture
+* Layer 0: Input Layer - 784 nodes, for each pixel.
+* Layer 1: Hidden Layer - 10 nodes, connected to (all?) nodes from Layer 0.
+* Layer 2: Output Layer - 10 nodes, each node corresponds to a whole number ∈ [0, 9]
+* Layer 0 --> Layer 1 --> Layer 2
+
+# Training/More Math?
+* There are 3 parts to training this model:
 
 
 ## 📂 Project Structure
